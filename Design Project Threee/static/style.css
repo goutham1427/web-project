@@ -1,0 +1,183 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f4f4f4;
+}
+
+/* Container Styling */
+.container {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Header Styling */
+h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Form Input Fields */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Links */
+p {
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Logout Button */
+.logout-btn {
+    background: #dc3545;
+}
+
+.logout-btn:hover {
+    background: #b71c1c;
+}
+
+/* Dashboard Styling */
+.dashboard-container {
+    max-width: 600px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.dashboard-container h2 {
+    margin-bottom: 20px;
+}
+
+/* File Upload Styling */
+.file-upload {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.file-upload input {
+    border: none;
+    padding: 12px;
+    background: #f8f9fa;
+    border-radius: 5px;
+}
+
+.file-upload button {
+    width: 100%;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.auth-container, .dashboard-container, .output-container {
+    background: white;
+    padding: 20px;
+    width: 400px;
+    margin: auto;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+input, button {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+button {
+    background: #0072ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.result-box {
+    background: #f8f8f8;
+    padding: 15px;
+    color: black;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.back-btn {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    background: #0072ff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.logout-btn {
+    margin-top: 20px;
+    background: red;
+}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome, {{ user.username }}</h2>
+        <a href="{{ url_for('logout') }}">Logout</a>
+        <h3>Upload Audio for Transcription</h3>
+        <form action="/transcribe" method="post" enctype="multipart/form-data">
+            <input type="file" name="audiofile" required>
+            <button type="submit">Transcribe</button>
+        </form>
+    </div>
+</body>
+</html>

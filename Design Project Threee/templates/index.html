@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask Transcription App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    {% if user.is_authenticated %}
+        <h1>Welcome, {{ user.id }}</h1>
+        <a href="{{ url_for('logout') }}">Logout</a>
+    {% else %}
+        <a href="{{ url_for('login') }}">Login</a>
+    {% endif %}
+    
+    <h1>Upload Audio for Transcription</h1>
+    <form action="/transcribe" method="post" enctype="multipart/form-data">
+        <input type="file" name="audiofile">
+        <input type="submit" value="Transcribe">
+    </form>
+
+    {% if transcription_result %}
+        <h2>Transcription Result</h2>
+        <p>{{ transcription_result }}</p>
+    {% endif %}
+
+    <h1>Live Transcription</h1>
+    <form action="/live_transcription" method="post">
+        <input type="submit" value="Start Live Transcription">
+    </form>
+</body>
+</html>
